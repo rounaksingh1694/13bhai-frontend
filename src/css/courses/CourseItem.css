@@ -1,0 +1,123 @@
+.courseitem,
+.courseitem * {
+  box-sizing: border-box;
+}
+
+.courseitem {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  padding-bottom: 30px;
+  width: 100%;
+  border-style: solid;
+  border-width: 0px 0px 1.5px 0px;
+  border-color: #121212;
+}
+
+.course-image {
+  border-radius: 10px;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 27.804vw;
+  height: 9.452vh;
+  position: relative;
+}
+
+.coursedata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  gap: 8.57px;
+  position: relative;
+  width: 60%;
+}
+
+.course-title {
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  font: 500 4.311vw "Space Grotesk";
+
+  width: 100%;
+}
+
+.course-description {
+  color: #767676;
+  text-align: left;
+  position: relative;
+  font: 400 2.9vw/4.229vw "Space Grotesk";
+}
+
+.course-author {
+  color: #cfcfcf;
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+  font: 400 2.9vw/4.229vw "Space Grotesk";
+}
+
+.course-price {
+  color: #d4d4d4;
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+  font: 400 3.629vw/4.907vw "Space Grotesk";
+}
+
+.course-link {
+  color: #ffffff;
+  text-align: left;
+  font: 400 3.629vw/4.907vw "Space Grotesk";
+  text-decoration: underline;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .courseitem {
+    padding-left: 1.83vw;
+    border-width: 0px 0px 1px 0px;
+  }
+  .coursedata {
+    width: 50vw;
+  }
+
+  .course-image {
+    width: 11.654vw;
+    height: 15.052vw;
+  }
+}
+
+@media (min-width: 480px) {
+  .course-image {
+    width: 179px;
+    height: 115px;
+  }
+}
+
+@media (min-width: 580px) {
+  .course-title {
+    font: 500 24.6px "Space Grotesk";
+  }
+
+  .course-author {
+    font: 400 16.55px/24.14px "Space Grotesk";
+  }
+
+  .course-price {
+    font: 400 17px/27.99px "Space Grotesk";
+  }
+
+  .course-description {
+    font: 400 16.55px/24.14px "Space Grotesk";
+  }
+
+  .course-link {
+    font: 400 16.55px/24.14px "Space Grotesk";
+  }
+}

@@ -1,0 +1,115 @@
+.bottombar,
+.bottombar * {
+  box-sizing: border-box;
+}
+
+.bottombar {
+  bottom: 0;
+  background: #161616;
+  padding: 10px 18px 17px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 83px;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.bottombar-text-selected {
+  color: #9a76ff;
+  text-align: left;
+  font: 600 3.227vw "Space Grotesk";
+  position: relative;
+}
+
+.bottombar-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  flex-shrink: 0;
+  height: 44.24px;
+  position: relative;
+}
+
+.bottombar-tab {
+  display: flex;
+  flex-direction: row;
+  gap: 9.21px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.bottombar-tab-selected {
+  background: #222222;
+  border-radius: 11.51px;
+  display: flex;
+  flex-direction: row;
+  gap: 9.21px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  position: relative;
+  padding: 1.326vh 8.605vw;
+}
+
+.bottombar-icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+  width: 12px;
+  height: 14px;
+}
+
+.bottombar-text {
+  color: #b3b3b3;
+  text-align: left;
+  font: 600 3.227vw "Space Grotesk";
+  position: relative;
+}
+
+.bottombar-icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+  width: 15.35px;
+  height: 15.35px;
+}
+
+@media (min-width: 375px) {
+  .bottombar-text {
+    font: 600 13.81px "Space Grotesk";
+  }
+
+  .bottombar-text-selected {
+    font: 600 13.81px "Space Grotesk";
+  }
+
+  .bottombar-tab-selected {
+    padding: 6.28px 18.83px 6.28px 18.83px;
+  }
+  .bottombar-tab {
+    padding: 6.28px 18.83px 6.28px 18.83px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottombar-tab-selected {
+    padding: 12.28px 36.83px 12.28px 36.83px;
+  }
+}
+@media (min-width: 1024px) {
+  .bottombar {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+}

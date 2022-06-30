@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.landingpage,
+.landingpage * {
+  box-sizing: border-box;
+}
+
+.landingpage {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  padding: 10px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.heroelement {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.herotext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero-title {
+  color: #ffffff;
+  text-align: center;
+  font: 700 2.858vw "Space Grotesk";
+  position: relative;
+  width: 572.81px;
+}
+
+.hero-description {
+  color: #767676;
+  text-align: center;
+  font: 400 1.106vw/1.613vw "Space Grotesk";
+  position: relative;
+  width: 572.81px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  gap: 1.734vw;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.i-want-to-find--text {
+  color: #ffffff;
+  text-align: center;
+  font: 700 1.371vw "Space Grotesk";
+  position: relative;
+}
+
+.dropdown-container {
+  background: #161616;
+  border-radius: 12.81px;
+
+  padding: 15.38px 19.22px 15.38px 19.22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12.81px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: row;
+  gap: 17.94px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.dropdown-text {
+  color: #ffffff;
+  text-align: left;
+  font: 600 1.279vw "Space Grotesk";
+  position: relative;
+}
+
+.dropdown-icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.for-text {
+  color: #ffffff;
+  text-align: center;
+  font: 700 1.371vw "Space Grotesk";
+  position: relative;
+}
+
+.frame-1116599041 {
+  display: flex;
+  flex-direction: row;
+  gap: 17.94px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ui-design {
+  color: #ffffff;
+  text-align: left;
+  font: 600 19.65px "Space Grotesk";
+  position: relative;
+}
+
+.icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.search-button {
+  border-radius: 11.58px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 14.48px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+  background: #703eff;
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  background-color: #000000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.logotext {
+  color: #ffffff;
+  text-align: center;
+  font: 600 1.893vw "Space Grotesk";
+  position: relative;
+  cursor: pointer;
+}
+
+.menulist {
+  display: flex;
+  flex-direction: row;
+  gap: 41.97px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.about-text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 1.26vw "Space Grotesk";
+  position: relative;
+  cursor: pointer;
+}
+
+.github-text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 1.26vw "Space Grotesk";
+  position: relative;
+}
+
+.blog-text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 1.26vw "Space Grotesk";
+  position: relative;
+  cursor: pointer;
+}
+
+.demo--text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 1.26vw "Space Grotesk";
+  position: relative;
+  cursor: pointer;
+}
+
+.help-text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 1.26vw "Space Grotesk";
+  position: relative;
+  cursor: pointer;
+}
+
+.get-started-button {
+  background: #703eff;
+  border-radius: 13.22px;
+  padding: 15.86px 15.86px 15.86px 15.86px;
+  display: flex;
+  flex-direction: row;
+  gap: 8.81px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.get-started--text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 1.093vw "Space Grotesk";
+  position: relative;
+}
+
+@media (min-width: 280px) {
+  .navbar {
+    width: 100%;
+    padding: 0 15px 0px 15px;
+  }
+
+  .logotext {
+    font: 600 25.08px "Space Grotesk";
+  }
+
+  .hero-cta {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .menulist {
+    display: none;
+  }
+
+  .heroelement {
+    width: 90%;
+  }
+
+  .get-started-button {
+    padding: 13.23px 13.23px 13.23px 13.23px;
+  }
+
+  .get-started--text {
+    font: 500 12px "Space Grotesk";
+  }
+
+  .hero-title {
+    font: 700 6.234vw "Space Grotesk";
+    width: 100%;
+  }
+
+  .hero-description {
+    width: 100%;
+    font: 400 3.82vw/5.463vw "Space Grotesk";
+  }
+
+  .i-want-to-find--text {
+    margin: 9px;
+    font-size: 4.339vw;
+  }
+
+  .for-text {
+    font-size: 4.339vw;
+    margin: 9px;
+  }
+
+  .dropdown-container {
+    justify-content: center;
+    align-items: center;
+    margin: 9px 0px;
+  }
+
+  .search-button {
+    width: 100.5%;
+    align-self: stretch;
+    margin-top: 18px;
+    height: 50px;
+  }
+
+  .dropdown-text {
+    font: 600 4.049vw "Space Grotesk";
+  }
+}
+
+@media (min-width: 500px) {
+  .navbar {
+    width: 100%;
+    padding: 0 15px 0px 15px;
+  }
+
+  .logotext {
+    font: 600 29.08px "Space Grotesk";
+  }
+
+  .hero-cta {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .menulist {
+    display: none;
+  }
+
+  .heroelement {
+    width: 90%;
+  }
+
+  .get-started-button {
+    padding: 13.23px 13.23px 13.23px 13.23px;
+  }
+
+  .get-started--text {
+    font: 500 14px "Space Grotesk";
+  }
+
+  .hero-title {
+    font: 700 26.68px "Space Grotesk";
+    width: 100%;
+  }
+
+  .hero-description {
+    width: 100%;
+    font: 400 16.35px/23.8px "Space Grotesk";
+  }
+
+  .i-want-to-find--text {
+    margin: 9px;
+    font-size: 18.57px;
+  }
+
+  .for-text {
+    margin: 9px;
+    font-size: 18.57px;
+  }
+
+  .dropdown-container {
+    justify-content: center;
+    align-items: center;
+    margin: 9px;
+  }
+
+  .search-button {
+    width: 96.5%;
+    align-self: stretch;
+    margin: 11px;
+  }
+
+  .dropdown-text {
+    font: 600 17.33px "Space Grotesk";
+  }
+}
+
+@media (min-width: 1040px) {
+  .heroelement {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .herotext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .hero-title {
+    color: #ffffff;
+    text-align: center;
+    font: 700 2.858vw "Space Grotesk";
+    position: relative;
+    width: 572.81px;
+  }
+
+  .hero-description {
+    color: #767676;
+    text-align: center;
+    font: 400 1.106vw/1.613vw "Space Grotesk";
+    position: relative;
+    width: 572.81px;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    gap: 1.734vw;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .i-want-to-find--text {
+    color: #ffffff;
+    text-align: center;
+    font: 700 1.371vw "Space Grotesk";
+    position: relative;
+    margin: 0;
+  }
+
+  .dropdown-container {
+    background: #161616;
+    border-radius: 12.81px;
+    padding: 15.38px 19.22px 15.38px 19.22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12.81px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    gap: 17.94px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .dropdown-text {
+    color: #ffffff;
+    text-align: left;
+    font: 600 1.279vw "Space Grotesk";
+    position: relative;
+  }
+
+  .dropdown-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+  }
+
+  .for-text {
+    color: #ffffff;
+    text-align: center;
+    font: 700 1.371vw "Space Grotesk";
+    position: relative;
+    margin: 0;
+  }
+
+  .frame-1116599041 {
+    display: flex;
+    flex-direction: row;
+    gap: 17.94px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .ui-design {
+    color: #ffffff;
+    text-align: left;
+    font: 600 19.65px "Space Grotesk";
+    position: relative;
+  }
+
+  .icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+  }
+
+  .search-button {
+    border-radius: 11.58px;
+    display: flex;
+    flex-direction: row;
+    gap: 14.48px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    margin: 0;
+    position: relative;
+    width: fit-content;
+    overflow: visible;
+    background: #703eff;
+  }
+
+  .navbar {
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .logotext {
+    color: #ffffff;
+    text-align: center;
+    font: 600 1.893vw "Space Grotesk";
+    position: relative;
+  }
+
+  .menulist {
+    display: flex;
+    flex-direction: row;
+    gap: 41.97px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .about-text {
+    color: #ffffff;
+    text-align: left;
+    font: 500 1.26vw "Space Grotesk";
+    position: relative;
+  }
+
+  .github-text {
+    color: #ffffff;
+    text-align: left;
+    font: 500 1.26vw "Space Grotesk";
+    position: relative;
+  }
+
+  .blog-text {
+    color: #ffffff;
+    text-align: left;
+    font: 500 1.26vw "Space Grotesk";
+    position: relative;
+  }
+
+  .demo--text {
+    color: #ffffff;
+    text-align: left;
+    font: 500 1.26vw "Space Grotesk";
+    position: relative;
+  }
+
+  .help-text {
+    color: #ffffff;
+    text-align: left;
+    font: 500 1.26vw "Space Grotesk";
+    position: relative;
+  }
+
+  .get-started-button {
+    background: #703eff;
+    border-radius: 13.22px;
+    padding: 15.86px 15.86px 15.86px 15.86px;
+    gap: 8.81px;
+  }
+
+  .get-started--text {
+    font: 500 1.093vw "Space Grotesk";
+  }
+
+  .hero-title {
+    font: 700 2.858vw "Space Grotesk";
+  }
+
+  .hero-description {
+    font: 400 1.106vw/1.613vw "Space Grotesk";
+  }
+
+  .dropdown-text {
+    font: 600 1.279vw "Space Grotesk";
+  }
+}
+
+/* @media (min-width: 1024px) {} */
+
+@media (min-width: 1280px) {
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5vh;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer-hackathon-text {
+  font: 400 14px/28px "Space Grotesk";
+  color: rgb(167, 167, 167);
+  letter-spacing: 0.2px;
+}

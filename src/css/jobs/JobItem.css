@@ -1,0 +1,108 @@
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: 30.45px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.job-item,
+.job-item * {
+  box-sizing: border-box;
+}
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.16vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  padding-bottom: 30px;
+  width: 100%;
+  border-style: solid;
+  border-width: 0px 0px 1.5px 0px;
+  border-color: #121212;
+}
+
+.job-title-and-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 11.43px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.job-title-text {
+  color: #ffffff;
+  text-align: left;
+  font: 600 5.259vw "Space Grotesk";
+  position: relative;
+  width: 100%;
+}
+
+.job-description-text {
+  color: #767676;
+  text-align: left;
+  font: 400 3.867vw/5.631vw "Space Grotesk";
+  position: relative;
+  width: 100%;
+  align-self: stretch;
+}
+
+.job-description-text a {
+  color: white;
+}
+
+.budget-text {
+  color: #ffffff;
+  text-align: left;
+  font: 400 3.867vw/5.631vw "Space Grotesk";
+  position: relative;
+}
+
+.job-url-text {
+  color: #ffffff;
+  text-align: left;
+  font: 400 3.843vw/5.607vw "Space Grotesk";
+  text-decoration: underline;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .job-item {
+    padding-left: 1.83vw;
+    border-width: 0px 0px 1px 0px;
+  }
+  .job-title-and-description-container {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 480px) {
+  .job-item {
+    gap: 20px;
+  }
+
+  .job-title-text {
+    font: 600 22.51px "Space Grotesk";
+  }
+
+  .job-description-text {
+    font: 400 16.55px/24.14px "Space Grotesk";
+  }
+  .job-url-text {
+    font: 400 19.19px/27.99px "Space Grotesk";
+  }
+
+  .budget-text {
+    font: 400 16.55px/24.14px "Space Grotesk";
+  }
+}

@@ -1,0 +1,47 @@
+.choose-aim,
+.choose-aim * {
+  box-sizing: border-box;
+}
+
+.choose-aim {
+  background: #181818;
+  border-radius: 20.51px;
+
+  padding: 20.51px 20.51px 20.51px 20.51px;
+  display: flex;
+  flex-direction: column;
+  gap: 17.77px;
+  align-items: center;
+  justify-content: center;
+  width: 253.02px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.option {
+  background: #1b1b1b;
+  border-radius: 10.94px;
+  border: solid #242424;
+  border-width: 1.09px;
+  padding: 20px 40px 20px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 13.67px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 212px;
+  position: relative;
+  cursor: pointer;
+}
+
+.option-text {
+  color: #ffffff;
+  text-align: left;
+  font: 500 16px "Space Grotesk";
+  position: relative;
+  font-size: 1rem;
+}

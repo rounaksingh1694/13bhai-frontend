@@ -1,0 +1,560 @@
+.base-screen,
+.base-screen * {
+  box-sizing: border-box;
+}
+
+.base-screen {
+  background: black;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  position: fixed;
+}
+
+.main-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 273px;
+  top: 51px;
+}
+
+.title-and--dropdown-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.aim-title-text {
+  color: #ffffff;
+  text-align: left;
+  font: 600 30.72px "Space Grotesk";
+  position: relative;
+}
+
+.skill-selector {
+  background: #161616;
+  border-radius: 11.25px;
+  padding: 13.5px 16.88px 13.5px 16.88px;
+  display: flex;
+  flex-direction: column;
+  gap: 11.25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.skill-selector-content {
+  display: flex;
+  flex-direction: row;
+  gap: 15.76px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.skill-name-text {
+  color: #ffffff;
+  text-align: left;
+  font: 600 17.26px "Space Grotesk";
+  position: relative;
+}
+
+.edit-icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.platforms-tab-list {
+  border-radius: 15px;
+  padding: 0px 25px 0px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  overflow-x: scroll;
+}
+
+.platforms-tab-list::-webkit-scrollbar {
+  width: 1em;
+}
+
+.platforms-tab-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.platforms-tab-list::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: 1px solid transparent;
+}
+
+.platforms-tab-selected {
+  border: solid #9a76ff;
+  border-width: 0px 0px 1.5px 0px;
+  padding: 0.651vw 25px 15px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.651vw;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.platforms-tab-text-selected {
+  color: #9a76ff;
+  text-align: left;
+  font: 600 22px "Space Grotesk";
+  position: relative;
+}
+
+.platforms-tab-unselected {
+  border: solid #212121;
+  border-width: 0px 0px 1.5px 0px;
+  padding: 0.651vw 25px 15px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.651vw;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.platforms-tab-text-unselected {
+  color: #cccccc;
+  text-align: left;
+  font: 600 22px "Space Grotesk";
+  position: relative;
+}
+
+.sidebar {
+  background: #000000;
+  border: solid #121212;
+  border-width: 1px;
+  padding: 51px 20px 51px 0px;
+  display: none;
+  flex-direction: column;
+  gap: 44px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: sticky;
+}
+
+.logo {
+  color: #ffffff;
+  text-align: center;
+  font: 500 29.08px "Space Grotesk";
+  position: relative;
+  cursor: pointer;
+}
+
+.tabs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 202px;
+  position: relative;
+}
+
+.tab-unselected {
+  padding: 0.651vw 0.651vw 0.651vw 0.651vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0.651vw;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 56px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-unselected-icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.tab-unselected-text {
+  color: #ffffff;
+  text-align: left;
+  font: 400 18px "Space Grotesk";
+  position: relative;
+}
+
+.tab-selected {
+  background: rgba(255, 246, 231, 0.15);
+  border-radius: 0px 15px 15px 0px;
+  padding: 0.551vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0.651vw;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 56px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-selected-icon {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.tab-selected-text {
+  color: #9a76ff;
+  text-align: left;
+  font: 500 18px "Space Grotesk";
+  position: relative;
+}
+
+@media (min-width: 280px) {
+  .main-section-header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 25px 0px;
+    padding: 0px 25px;
+    gap: 25px;
+  }
+
+  .tab-selected-text {
+    font: 500 18px "Space Grotesk";
+  }
+
+  .aim-title-text {
+    font-size: 6.5vw;
+    font-weight: 500;
+  }
+
+  .skill-selector {
+    border-radius: 11.25px;
+    padding: 1.458vh 3.154vw;
+  }
+  .skill-selector-content {
+    gap: 3.682vw;
+  }
+  .skill-name-text {
+    font: 600 4.033vw "Space Grotesk";
+  }
+
+  .platforms-tab-list {
+    border-radius: 15px;
+    padding: 0px 25px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 6.937vw;
+  }
+
+  .platforms-tab-selected {
+    padding: 1.254vh 4.523vw;
+    gap: 0.651vw;
+  }
+
+  .platforms-tab-unselected {
+    padding: 1.254vh 4.523vw;
+    gap: 0.651vw;
+  }
+
+  .platforms-tab-text-selected {
+    font: 500 3.979vw "Space Grotesk";
+  }
+
+  .platforms-tab-text-unselected {
+    font: 500 3.979vw "Space Grotesk";
+  }
+}
+
+@media (min-width: 440px) {
+}
+
+@media (min-width: 440px) {
+  .tab-selected-text {
+    font: 500 15px "Space Grotesk";
+  }
+
+  .aim-title-text {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .skill-selector {
+    border-radius: 11.25px;
+    padding: 10.5px 14.88px;
+  }
+  .skill-selector-content {
+    gap: 10.76px;
+  }
+  .skill-name-text {
+    font: 500 15.26px "Space Grotesk";
+  }
+
+  .platforms-tab-list {
+    border-radius: 15px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 29.69px;
+  }
+
+  .platforms-tab-selected {
+    padding: 11.61px 19.36px;
+    gap: 7.74px;
+  }
+
+  .platforms-tab-unselected {
+    padding: 11.61px 19.36px;
+    gap: 7.74px;
+  }
+
+  .platforms-tab-text-selected {
+    font: 500 15.03px "Space Grotesk";
+  }
+
+  .platforms-tab-text-unselected {
+    font: 500 15.03px "Space Grotesk";
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4.581vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 12.5vw;
+    top: 2vh;
+  }
+
+  .title-and--dropdown-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.618vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    padding-left: 25px;
+  }
+
+  .aim-title-text {
+    color: #ffffff;
+    text-align: left;
+    font: 600 2vw "Space Grotesk";
+    position: relative;
+  }
+
+  .skill-selector {
+    background: #161616;
+    border-radius: 11.25px;
+    padding: 0.879vw 1.099vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.732vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .skill-selector-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.026vw;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .skill-name-text {
+    color: #ffffff;
+    text-align: left;
+    font: 600 1.124vw "Space Grotesk";
+    position: relative;
+  }
+
+  .edit-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+  }
+
+  .platforms-tab-list {
+    border-radius: 0.977vw;
+    padding: 0px 1.628vw;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: max-content;
+    position: relative;
+  }
+
+  .platforms-tab-selected {
+    border: solid #9a76ff;
+    border-width: 0px 0px 1.5px 0px;
+    padding: 0.651vw 25px 15px 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.651vw;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .platforms-tab-text-selected {
+    color: #9a76ff;
+    text-align: center;
+    font: 600 1.432vw "Space Grotesk";
+    position: relative;
+  }
+
+  .platforms-tab-unselected {
+    border: solid #212121;
+    border-width: 0px 0px 1.5px 0px;
+    padding: 0.651vw 25px 15px 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.651vw;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .platforms-tab-text-unselected {
+    color: #cccccc;
+    text-align: center;
+    font: 600 1.432vw "Space Grotesk";
+    position: relative;
+  }
+
+  .sidebar {
+    background: #000000;
+    border: solid #121212;
+    border-width: 1px;
+    padding: 3.32vw 1.302vw 3.32vw 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.865vw;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+
+  .logo {
+    color: #ffffff;
+    text-align: center;
+    font: 500 1.893vw "Space Grotesk";
+    position: relative;
+  }
+
+  .tabs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.302vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 13.151vw;
+    position: relative;
+  }
+
+  .tab-unselected {
+    padding: 0.651vw 0.651vw 0.651vw 0.651vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.651vw;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+  }
+
+  .tab-unselected-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+  }
+
+  .tab-unselected-text {
+    color: #ffffff;
+    text-align: left;
+    font: 400 1.172vw "Space Grotesk";
+    position: relative;
+  }
+
+  .tab-selected {
+    background: rgba(255, 246, 231, 0.15);
+    border-radius: 0px 0.977vw 0.977vw 0px;
+    padding: 0.651vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.651vw;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 7.33vh;
+    position: relative;
+  }
+
+  .tab-selected-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+  }
+
+  .tab-selected-text {
+    color: #9a76ff;
+    text-align: left;
+    font: 500 1.172vw "Space Grotesk";
+    position: relative;
+  }
+}
+
+/* @media (min-width: 1024px) {} */
+
+@media (min-width: 1280px) {
+}

@@ -1,0 +1,66 @@
+.loaderdialog,
+.loaderdialog * {
+  box-sizing: border-box;
+}
+
+.loaderdialog {
+  background: #131313;
+  border-radius: 35px;
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 278px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loadinganimation {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+  width: 100px;
+  width: 100px;
+}
+
+.loading-text {
+  color: #d4d4d4;
+  text-align: center;
+  font: 500 13.7px "Space Grotesk";
+  position: relative;
+  margin: 0px 15px;
+}
+
+@media (min-width: 480px) {
+  .loaderdialog {
+    width: 390px;
+    height: 278px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loaderdialog {
+    width: 25.391vw;
+    height: 36.387vh;
+  }
+
+  .loadinganimation {
+    width: 8.456vw;
+    height: 17vh;
+  }
+
+  .loading-text {
+    font: 500 15.03px "Space Grotesk";
+  }
+}
