@@ -147,8 +147,18 @@ export const LandingPage = () => {
 					>
 						Github
 					</a>
-					<a className="blog-text">Blog</a>
-					<a className="demo--text">Demo</a>
+					<a
+						className="blog-text"
+						href="https://rounaksingh1694.hashnode.dev/13bhai-find-resources-to-learn-and-opportunities-to-earn-all-at-one-place"
+					>
+						Blog
+					</a>
+					<a
+						className="demo--text"
+						href="https://www.youtube.com/watch?v=7uJjK7qH-3s"
+					>
+						Demo
+					</a>
 				</div>
 				<div
 					className="get-started-button"
