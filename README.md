@@ -6,7 +6,7 @@
 
 ## 💻 Technologies Used
 
-### [Backend]9https://github.com/rounaksingh1694/13bhai-backend/) (Deployed on Linode)
+### [Backend](https://github.com/rounaksingh1694/13bhai-backend/) (Deployed on Linode)
 
 #### Rest API
 
