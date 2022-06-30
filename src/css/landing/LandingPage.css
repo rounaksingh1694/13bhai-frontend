@@ -213,6 +213,7 @@ body {
 	font: 500 1.26vw "Space Grotesk";
 	position: relative;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .github-text {
@@ -220,6 +221,7 @@ body {
 	text-align: left;
 	font: 500 1.26vw "Space Grotesk";
 	position: relative;
+	text-decoration: none;
 }
 
 .blog-text {
@@ -228,6 +230,7 @@ body {
 	font: 500 1.26vw "Space Grotesk";
 	position: relative;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .demo--text {
@@ -236,6 +239,7 @@ body {
 	font: 500 1.26vw "Space Grotesk";
 	position: relative;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .help-text {
